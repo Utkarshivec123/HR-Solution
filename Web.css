@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(33, 29, 75, 0.75),rgba(0, 0, 0, 0.75)),url(gagan.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Options{
+    width: 85%;
+    margin: auto; /*unknown */
+    padding: 45px 10px; /*distance between head and the options*/
+    display: flex;
+    align-items: right;
+    justify-content: center; /*earlier: space-between*/
+}
+
+.Options ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 50px 50px; /*distance between head and the options*/
+    position: relative;
+}
+
+.Options ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 0px; /*distance between options*/
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.Options ul li::after{
+    content: '';
+    height: 10px;
+    width: 0;
+    background: #117fe5;
+    position: absolute;
+    border-radius: 20px;
+    left: 12%;
+    bottom: -10px; /* for distance between loading line and the Options */
+    transition: width 0.3s ease-in-out;
+}
+
+.Options ul li:hover:after {
+    width: 76%;
+}
+
+.Content {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    text-align:center;
+    color: #fff;
+}
+
+.content h1{
+    font-size:70px;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.CEO {
+    background-color: #117fe5;
+    padding: 100px;
+    position: relative; /* Add this to make .arrow position relative to .CEO */
+}
+
+
+.CEO p{
+    margin: 20px;
+    padding:20px;
+    font-size:40px;
+    margin-top: -40px;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: "Comic Sans MS", cursive;
+    color:#fff;
+}
+.CEO h1{
+    font-size:40px;
+    margin-left: 170px;
+    margin-top: 0px;
+    position: relative;
+    font-family: "Comic Sans MS", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#fff;
+    
+
+}
+
+.kuldeep_kumar {
+    margin-left: 200px;
+    /* margin: 20px auto; Adjust margin as needed */
+    text-align: left;
+    border: 5px solid #ccc; /* Adjust border width and color as needed */
+    padding: 10px; /* Add padding to adjust the space between the image and border */
+    display: inline-block;
+    border-radius: 20px; 
+
+
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #117fe5;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #117fe5;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+
+}
+::-webkit-scrollbar-track{
+    background: #117fe5;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#fff,#fff);
+    border-radius: 10px;
+}
+
+/* .Services {
+    background: #117fe5;
+    height: 90vh;
+} */
